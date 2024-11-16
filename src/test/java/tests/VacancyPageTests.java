@@ -10,6 +10,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.VacancyPage;
 
+@Owner("Denis Gubert")
 public class VacancyPageTests extends BaseTest {
 
     VacancyPage page = new VacancyPage();
@@ -17,7 +18,6 @@ public class VacancyPageTests extends BaseTest {
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Issue("AUT-1234")
-    @Owner("Denis Gubert")
     @DisplayName("Проверка Title на странице Вакансий")
     void shouldHaveVacancyTitle() {
         page.openVacancyPage();
@@ -27,7 +27,6 @@ public class VacancyPageTests extends BaseTest {
 
     @Severity(SeverityLevel.CRITICAL)
     @Issue("AUT-1235")
-    @Owner("Denis Gubert")
     @ParameterizedTest(name = "Проверка наличия вакансии {0}")
     @ValueSource( strings = {
             "Фармацевт-провизор (Приладожский 23А)",
@@ -43,7 +42,6 @@ public class VacancyPageTests extends BaseTest {
 
     @Severity(SeverityLevel.CRITICAL)
     @Issue("AUT-1236")
-    @Owner("Denis Gubert")
     @ParameterizedTest(name = "Проверка поиска вакансии по значению {0}")
     @ValueSource( strings = {
             "Приладожский",
