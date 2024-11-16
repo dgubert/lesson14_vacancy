@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "${JOB_BASE_NAME}",
+    "environment": "Autotest Environment",
+    "comment": "This is test comment",
+    "reportLink": "${BUILD_URL}",
+    "language": "en",
+    "messenger": "telegram",
+    "allureFolder": "build/reports/allure-report/allureReport/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "7939717396:AAH0FIvg41GgveJmUL_YeIYl290M5Vz5F9g",
+    "chat": "-1002468559554",
+    "replyTo": ""
+  }
+}
